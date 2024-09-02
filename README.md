@@ -147,3 +147,10 @@ drwxr-xr-x 1 vagrant vagrant  512 Sep  2 04:02 images
 
 
 
+## New Run in Terraform Cloud for first time
+
+![](./images/Screenshot%202024-09-02%20at%2011.18.50 AM.png)
+
+
+HCP_CLIENT_SECRET="4g2bY2SOofMgjry373Tk2AH8VCyWvdAB1lwSbdryG9QiFZMXSnF1my49CXX9BBpF"
+HCP_CLIENT_ID="k5PnwdefKV0vzVtZXHmFEwtDAfi6b1pt"
