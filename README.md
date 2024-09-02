@@ -151,4 +151,56 @@ drwxr-xr-x 1 vagrant vagrant  512 Sep  2 04:02 images
 
 ![](./images/Screenshot%202024-09-02%20at%2011.18.50 AM.png)
 
+## Create Vault Cluster
+![](./images/Screenshot%202024-09-02%20at%2012.10.28 PM.png)
+
+
+![](./images/Screenshot%202024-09-02%20at%2012.10.53 PM.png)
+
+![](./images/Screenshot%202024-09-02%20at%2010.38.04 AM.png)
+
+![](./images/Screenshot%202024-09-02%20at%2012.47.54 PM.png)
+
+
+![](./images/Screenshot%202024-09-02%20at%2012.48.43 PM.png)
+
+
+### Access with CLI
+
+![](./images/Screenshot%202024-09-02%20at%2012.54.27 PM.png)
+
+```
+export VAULT_ADDR="https://vault-cluster-public-vault-0b2b41f8.c316ef84.z1.hashicorp.cloud:8200"; export VAULT_NAMESPACE="admin"
+```
+
+```
+vagrant@cloud-native-box:~/aws-access-management-vault-terraform-cloud$ vault status
+Key                      Value
+---                      -----
+Seal Type                awskms
+Recovery Seal Type       shamir
+Initialized              true
+Sealed                   false
+Total Recovery Shares    1
+Threshold                1
+Version                  1.15.8+ent
+Build Date               2024-04-19T14:19:09Z
+Storage Type             raft
+Cluster Name             635dc13e-a1bb-4de3-9e13-a564e9ac3555
+Cluster ID               e3e3472a-1903-071f-ff96-e8a363d5c4f9
+HA Enabled               true
+HA Cluster               https://172.25.16.173:8201
+HA Mode                  active
+Active Since             2024-09-02T05:19:35.66714954Z
+Raft Committed Index     1536
+Raft Applied Index       1536
+Last WAL                 380
+vagrant@cloud-native-box:~/aws-access-management-vault-terraform-cloud$ 
+```
+
+![](./images/Screenshot%202024-09-02%20at%2012.56.56 PM.png)
+
+![](./images/Screenshot%202024-09-02%20at%2012.57.57 PM.png)
+
+
 
